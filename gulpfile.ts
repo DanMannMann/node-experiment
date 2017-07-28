@@ -43,12 +43,12 @@ export class Gulpfile {
         return this.exec("tsoa routes", [], () => cb());
     }
 
-    @Task("typescript", ["swag"])
+    @Task("typescript", ["swag", "routes"])
     typescript(cb: Function) {
         return this.exec("tsc", [], () => cb());
     }
     
-    @Task("default", ["routes", "typescript"])
+    @Task("default", ["typescript"])
     default() {
 
     }

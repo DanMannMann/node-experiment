@@ -1,6 +1,7 @@
 /* tslint:disable */
 import { ValidateParam, FieldErrors, ValidateError } from 'tsoa';
 import { Controller } from 'tsoa';
+import { iocContainer } from './container';
 import { UsersController } from './controllers/testController';
 
 const models: any = {
@@ -29,7 +30,7 @@ export function RegisterRoutes(app: any) {
                 return next(err);
             }
 
-            const controller = new UsersController();
+            const controller = iocContainer.get<UsersController>(UsersController);
 
 
             const promise = controller.getUser.apply(controller, validatedArgs);

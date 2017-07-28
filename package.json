@@ -16,6 +16,9 @@
     "express": "^4.15.3",
     "express-request-logger": "0.0.3",
     "gulp-typescript": "^3.2.1",
+    "inversify": "^4.3.0",
+    "inversify-binding-decorators": "^3.0.0",
+    "reflect-metadata": "^0.1.10",
     "swagger-ui-express": "^2.0.4",
     "tsoa": "^1.2.2",
     "winston": "^2.3.1"

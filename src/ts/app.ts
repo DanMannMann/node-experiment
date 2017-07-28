@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import * as express from 'express';
 import * as routes from './routes';
 import * as cors from 'cors';

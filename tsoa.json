@@ -1,0 +1,19 @@
+{
+    "swagger": {
+        "outputDirectory": "./dist",
+        "entryFile": "./src/ts/app.ts",
+        "host": "localhost:1234",
+        "version": "1.0",
+        "name": "Test Swagger Thing",
+        "description": "a description",
+        "license": "MIT",
+        "basePath": "/v1",
+        "yaml": true
+    },
+    "routes": {
+        "basePath": "/v1",
+        "entryFile": "./src/ts/app.ts",
+        "routesDir": "./src/ts",
+        "middleware": "express"
+    }
+}

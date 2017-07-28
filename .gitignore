@@ -1,0 +1,7 @@
+# compiled stuff
+dist
+server
+
+# nodey stuff
+node_modules
+
